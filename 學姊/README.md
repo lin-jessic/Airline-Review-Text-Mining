@@ -23,4 +23,5 @@ https://drive.google.com/drive/folders/17LaAqyuTrSRSHajfMrWCw6hYqIu0xBUi?usp=dri
 ├── sampled_20k_dataset.csv
 ├── sampled_20k_with_tokens.csv
 └── test.py
+結構圖如下:
 ![alt text](image.png)
