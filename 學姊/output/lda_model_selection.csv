@@ -1,0 +1,4 @@
+﻿num_topics,perplexity,note
+5,1170.1653,"Lower perplexity is better mathematically, but final choice should also consider interpretability."
+7,1163.5285,"Lower perplexity is better mathematically, but final choice should also consider interpretability."
+10,1166.0451,"Lower perplexity is better mathematically, but final choice should also consider interpretability."

@@ -1,0 +1,58 @@
+Member B Analysis Summary
+============================================================
+
+Dataset
+------------------------------------------------------------
+Input file: sampled_20k_with_tokens.csv
+Total reviews used: 20000
+Recommended = yes: 10000
+Recommended = no : 10000
+
+Methods
+------------------------------------------------------------
+1. TF keyword analysis was used to identify frequent terms.
+2. TF-IDF keyword analysis was used to identify representative terms for each group.
+3. VADER sentiment analysis was used to calculate sentiment scores from the original Review column.
+4. LDA topic modeling was applied mainly to not recommended reviews to identify complaint themes.
+
+Sentiment Summary
+------------------------------------------------------------
+Recommended = no: review_count = 10000, avg_sentiment = -0.3619, avg_overall_score = 1.89
+Recommended = yes: review_count = 10000, avg_sentiment = 0.7474, avg_overall_score = 8.331
+
+LDA Model Selection
+------------------------------------------------------------
+num_topics = 5, perplexity = 1170.1653
+num_topics = 7, perplexity = 1163.5285
+num_topics = 10, perplexity = 1166.0451
+
+Final LDA topic number used in output: 7
+
+Final LDA Topics
+------------------------------------------------------------
+Topic 0 | Flight Delay and Cancellation | size = 1084 | top words = hour, delay, board, time, minut, wait, arriv, gate, airport, staff, late, check
+Topic 1 | Refund and Compensation Issues | size = 1457 | top words = seat, bag, check, pay, charg, extra, board, luggag, never, even, carri, paid
+Topic 2 | Baggage and Luggage Problems | size = 1274 | top words = told, airport, custom, luggag, servic, call, check, ask, bag, help, said, day
+Topic 3 | Flight Delay and Cancellation | size = 1783 | top words = hour, delay, time, airport, day, cancel, hotel, wait, never, next, anoth, connect
+Topic 4 | Booking, Check-in, and Boarding | size = 1555 | top words = cancel, book, ticket, refund, custom, servic, call, day, chang, time, email, tri
+Topic 5 | Seat Comfort and Cabin Space | size = 2687 | top words = seat, food, servic, class, crew, cabin, busi, meal, good, economi, time, entertain
+Topic 6 | Staff Service and Attitude | size = 160 | top words = air, via, staff, canada, dubai, servic, singapor, london, sydney, emir, airport, melbourn
+
+Important Output Files
+------------------------------------------------------------
+tf_yes_keywords.csv
+tf_no_keywords.csv
+tf_yes_no_keyword_comparison.csv
+tfidf_yes_keywords.csv
+tfidf_no_keywords.csv
+tfidf_yes_no_keyword_comparison.csv
+tfidf_high_rated_keywords.csv
+tfidf_low_rated_keywords.csv
+sentiment_results.csv
+sentiment_summary_by_recommended.csv
+lda_model_selection.csv
+lda_topics.csv
+lda_representative_reviews.csv
+fig_tfidf_comparison.png
+fig_sentiment_dist.png
+fig_lda_topics.png

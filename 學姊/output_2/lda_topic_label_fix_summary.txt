@@ -1,0 +1,50 @@
+LDA Topic Label Fix Summary
+======================================================================
+
+Purpose
+----------------------------------------------------------------------
+This file documents the manual topic labeling step for the LDA baseline. The purpose is to improve interpretability after checking the LDA top words and representative reviews.
+
+Important Methodological Note
+----------------------------------------------------------------------
+This step does not change the LDA model results. The topic_id, topic_size, top_words, representative reviews, and topic probabilities are preserved. Only the human-readable topic labels and interpretation explanations are updated.
+
+Fixed Topic Labels
+----------------------------------------------------------------------
+Topic 0: Boarding Delay and Airport Waiting
+Reason: The top words and representative reviews suggest airport-side waiting experiences, including boarding, gate waiting, check-in, delayed arrival, and waiting time.
+Top words: hour, delay, board, time, minut, wait, arriv, gate, airport, staff, late, check
+
+Topic 1: Baggage Fees and Extra Charges
+Reason: The topic words indicate extra payment and baggage-related issues, including bags, seat selection, check-in luggage, extra charges, and paid services.
+Top words: seat, bag, check, pay, charg, extra, board, luggag, never, even, carri, paid
+
+Topic 2: Customer Service and Baggage Handling
+Reason: The topic combines customer service and luggage handling issues. Words such as customer, service, told, call, help, luggage, and bag suggest unclear assistance and baggage-related complaints.
+Top words: told, airport, custom, luggag, servic, call, check, ask, bag, help, said, day
+
+Topic 3: Flight Delay, Cancellation, and Missed Connections
+Reason: This topic clearly reflects serious flight disruptions. Words such as delay, cancel, hour, wait, hotel, next, and connect are associated with long delays, cancellations, missed connections, and rebooking or accommodation problems.
+Top words: hour, delay, time, airport, day, cancel, hotel, wait, never, next, anoth, connect
+
+Topic 4: Booking, Refund, and Ticket Changes
+Reason: This topic focuses on booking, ticket, refund, and communication problems. Words such as book, ticket, refund, change, email, call, and customer service indicate problems before or after the flight rather than only the flight experience itself.
+Top words: cancel, book, ticket, refund, custom, servic, call, day, chang, time, email, tri
+
+Topic 5: Cabin Experience, Seat, Food, and Crew Service
+Reason: This topic describes the in-flight and cabin experience. Words such as seat, food, service, class, crew, cabin, meal, economy, and business suggest comfort, meals, crew service, and cabin class experience.
+Top words: seat, food, servic, class, crew, cabin, busi, meal, good, economi, time, entertain
+
+Topic 6: Route-specific Service Complaints
+Reason: This topic contains many airline, airport, or route-related words, such as air, via, Canada, Dubai, Singapore, London, Sydney, and Emirates. Therefore, it is better interpreted as route-specific or airline-specific service complaints rather than a single service factor.
+Top words: air, via, staff, canada, dubai, servic, singapor, london, sydney, emir, airport, melbourn
+
+Output Files
+----------------------------------------------------------------------
+output_2/lda_manual_interpretation_table_fixed.csv
+output_2/lda_topics_fixed.csv
+output_2/lda_representative_reviews_fixed.csv
+
+Recommended Report Sentence
+----------------------------------------------------------------------
+After examining the LDA top words and representative reviews, the topics were manually labeled to improve interpretability. This manual labeling step did not modify the model output; it only provided clearer human-readable names for the topics.

@@ -1,0 +1,4 @@
+﻿num_topics,perplexity,coherence_score,selection_note
+5,1170.1653,0.491,Final topic number should consider both coherence and human interpretability.
+7,1163.5285,0.5005,Final topic number should consider both coherence and human interpretability.
+10,1166.0451,0.4833,Final topic number should consider both coherence and human interpretability.

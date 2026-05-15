@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airline Reviews Text Mining Dashboard | Member B</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">✈</div>
+        <div>
+          <h1 data-i18n="appTitle">航空評論文字探勘</h1>
+          <p data-i18n="appSubtitle">Member B Dashboard</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-btn active" data-page="overview" data-i18n="navOverview">專題設計</button>
+        <button class="nav-btn" data-page="keywords" data-i18n="navKeywords">TF / TF-IDF 關鍵字</button>
+        <button class="nav-btn" data-page="sentiment" data-i18n="navSentiment">情緒分析</button>
+        <button class="nav-btn" data-page="lda" data-i18n="navLda">LDA 主題模型</button>
+        <button class="nav-btn" data-page="reviews" data-i18n="navReviews">代表性評論</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="langToggle" class="lang-toggle">EN</button>
+        <p data-i18n="langHint">點擊切換英文介面</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">Airline Reviews Text Mining Final Project</p>
+          <h2 id="pageTitle" data-i18n="pageTitleOverview">專題設計與資料策略</h2>
+        </div>
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <span data-i18n="statusText">讀取 output / output_2 結果</span>
+        </div>
+      </header>
+
+      <section id="overview" class="page active">
+        <div class="hero-card">
+          <div>
+            <p class="eyebrow" data-i18n="overviewEyebrow">Balanced Sampling Design</p>
+            <h3 data-i18n="overviewTitle">以 Recommended 做分層抽樣，讓 LDA 與 BERTopic 公平比較</h3>
+            <p data-i18n="overviewDesc">
+              本專題先將 Airline Reviews dataset 依照 Recommended 欄位縮減為平衡資料集：yes 10,000 筆、no 10,000 筆，共 20,000 筆。Member B 使用同一份 sampled_20k_with_tokens.csv 完成 TF/TF-IDF、VADER sentiment analysis 與 LDA baseline。
+            </p>
+          </div>
+          <div class="metric-grid">
+            <div class="metric">
+              <span data-i18n="metricTotal">總評論數</span>
+              <strong>20,000</strong>
+            </div>
+            <div class="metric">
+              <span data-i18n="metricYes">Recommended = yes</span>
+              <strong>10,000</strong>
+            </div>
+            <div class="metric">
+              <span data-i18n="metricNo">Recommended = no</span>
+              <strong>10,000</strong>
+            </div>
+            <div class="metric">
+              <span data-i18n="metricSeed">Random state</span>
+              <strong>42</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <h4 data-i18n="memberA">Member A：資料與前處理</h4>
+            <p data-i18n="memberADesc">負責資料清理、分層抽樣、tokens 欄位、token_count 與 EDA 圖表。</p>
+          </article>
+          <article class="card highlight">
+            <h4 data-i18n="memberB">Member B：傳統方法與 LDA</h4>
+            <p data-i18n="memberBDesc">負責 TF/TF-IDF、VADER 情緒分析、LDA baseline、coherence score、manual topic interpretation。</p>
+          </article>
+          <article class="card">
+            <h4 data-i18n="memberC">Member C：BERTopic 與展示</h4>
+            <p data-i18n="memberCDesc">負責 BERTopic、LDA vs BERTopic 比較、dashboard / presentation 整合。</p>
+          </article>
+        </div>
+
+        <div class="card">
+          <h4 data-i18n="methodFlow">Member B 分析流程</h4>
+          <div class="timeline">
+            <div><span>1</span><p data-i18n="flow1">讀取 sampled_20k_with_tokens.csv</p></div>
+            <div><span>2</span><p data-i18n="flow2">使用 review_cleaned 做 TF / TF-IDF</p></div>
+            <div><span>3</span><p data-i18n="flow3">使用 Review 原文做 VADER sentiment</p></div>
+            <div><span>4</span><p data-i18n="flow4">使用 tokens 做 LDA topic modeling</p></div>
+            <div><span>5</span><p data-i18n="flow5">輸出圖表、CSV、代表性評論與人工解釋表</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="keywords" class="page">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">TF / TF-IDF</p>
+            <h3 data-i18n="keywordsTitle">推薦與不推薦評論的關鍵字差異</h3>
+          </div>
+          <p data-i18n="keywordsDesc">TF-IDF 用於找出各群組較具代表性的詞，協助比較 Recommended = yes 與 Recommended = no 的語意差異。</p>
+        </div>
+
+        <div class="image-panel">
+          <img id="tfidfImg" src="../output_2/fig_tfidf_comparison.png" alt="TF-IDF comparison" />
+        </div>
+
+        <div class="card">
+          <div class="table-head">
+            <h4 data-i18n="tfidfTableTitle">TF-IDF yes/no 比較表</h4>
+            <input id="keywordSearch" type="text" data-i18n-placeholder="searchPlaceholder" placeholder="搜尋 keyword..." />
+          </div>
+          <div class="table-wrap">
+            <table id="tfidfTable"></table>
+          </div>
+        </div>
+
+        <div class="insight-grid">
+          <article class="insight yes">
+            <h4 data-i18n="yesInsightTitle">推薦評論常見語意</h4>
+            <p data-i18n="yesInsight">通常偏向服務、舒適度、友善、良好經驗，例如 good、crew、friendly、comfortable、excellent。</p>
+          </article>
+          <article class="insight no">
+            <h4 data-i18n="noInsightTitle">不推薦評論常見語意</h4>
+            <p data-i18n="noInsight">通常偏向延誤、等待、客服、行李、票務與額外費用，例如 delayed、bag、ticket、customer service、worst、pay。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sentiment" class="page">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">VADER Sentiment</p>
+            <h3 data-i18n="sentimentTitle">推薦標籤與情緒分數的一致性</h3>
+          </div>
+          <p data-i18n="sentimentDesc">VADER 使用 Review 原始文字計算 compound score，範圍為 -1 到 +1。</p>
+        </div>
+
+        <div id="sentimentMetrics" class="metric-grid wide"></div>
+
+        <div class="grid-2">
+          <div class="image-panel">
+            <img src="../output_2/fig_sentiment_dist.png" alt="Sentiment distribution" />
+          </div>
+          <div class="card">
+            <h4 data-i18n="sentimentSummaryTitle">Sentiment Summary</h4>
+            <div class="table-wrap compact">
+              <table id="sentimentTable"></table>
+            </div>
+            <p class="note" data-i18n="sentimentNote">
+              結果通常可用來說明：Recommended = yes 的情緒分數明顯高於 Recommended = no，且與 OverallScore 方向一致。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="lda" class="page">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">LDA Baseline</p>
+            <h3 data-i18n="ldaTitle">不推薦評論中的主要抱怨主題</h3>
+          </div>
+          <p data-i18n="ldaDesc">LDA 主要針對 Recommended = no 評論，找出 passenger complaints 的主題結構。</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="image-panel">
+            <img src="../output_2/fig_lda_topics.png" alt="LDA topic distribution" />
+          </div>
+          <div class="image-panel">
+            <img src="../output_2/fig_lda_coherence_scores.png" alt="LDA coherence scores" />
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 data-i18n="ldaTopicsTableTitle">LDA 修正版人工主題命名</h4>
+          <div class="table-wrap">
+            <table id="ldaTopicsTable"></table>
+          </div>
+        </div>
+
+        <div class="card callout">
+          <h4 data-i18n="manualLabelTitle">為什麼要人工修正 Topic Label？</h4>
+          <p data-i18n="manualLabelDesc">
+            LDA 產生的是 topic-word distribution，不會自動理解主題名稱。因此本 dashboard 使用 output_2 的修正版：保留 topic_id、topic_size、top_words、representative reviews，不改模型結果，只根據 top words 與代表性評論提供更清楚的人工主題命名。
+          </p>
+          <a class="button-link" href="../output_2/lda_visualization.html" target="_blank" data-i18n="openLdaVis">開啟 pyLDAvis 互動視覺化</a>
+        </div>
+      </section>
+
+      <section id="reviews" class="page">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Representative Reviews</p>
+            <h3 data-i18n="reviewsTitle">每個 LDA Topic 的代表性評論</h3>
+          </div>
+          <p data-i18n="reviewsDesc">代表性評論用來驗證 topic label 是否合理，並提供報告中的質性解釋素材。</p>
+        </div>
+
+        <div class="filters">
+          <label data-i18n="topicFilterLabel">選擇 Topic</label>
+          <select id="topicFilter">
+            <option value="all" data-i18n="allTopics">全部 Topics</option>
+          </select>
+        </div>
+
+        <div id="reviewCards" class="review-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
