@@ -7,6 +7,7 @@ https://drive.google.com/drive/folders/17LaAqyuTrSRSHajfMrWCw6hYqIu0xBUi?usp=dri
 # Airline Reviews Text Mining Dashboard
 ## Project Folder Structure
 目前專案資料夾結構如下：
+/n
 ![Project folder structure](image.png)
 ```text
 學姊/
