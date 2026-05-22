@@ -1,0 +1,215 @@
+term,polarity,score,category,domain
+aborted takeoff,negative,-1,operations,safety
+abruptly cancelled,negative,-1,schedule,passenger
+accident,negative,-2,safety,safety
+annoying,negative,-1,operations,safety
+anxious,negative,-1,emotion,safety
+arrogant,negative,-1,service,passenger
+autopilot failure,negative,-1,safety,safety
+awful experience,negative,-1,operations,safety
+bad experience,negative,-1,operations,safety
+bad service,negative,-1,operations,safety
+bad smell,negative,-1,comfort,passenger
+baggage not delivered,negative,-1,baggage,passenger
+biased,negative,-1,service,passenger
+bird strike,negative,-1,safety,safety
+broken baggage,negative,-1,baggage,passenger
+broken belt,negative,-1,operations,safety
+broken screen,negative,-1,operations,safety
+broken seat,negative,-1,comfort,passenger
+cabin depressurization,negative,-1,safety,safety
+cancelled,negative,-1,schedule,passenger
+careless,negative,-1,operations,safety
+catastrophic failure,negative,-3,safety,safety
+chaotic boarding,negative,-1,schedule,passenger
+cold staff,negative,-1,operations,safety
+collision,negative,-2,safety,safety
+communication failure,negative,-1,safety,safety
+concerned,negative,-1,operations,safety
+conflicting information,negative,-1,communication,passenger
+confusing policy,negative,-1,communication,passenger
+constant delay,negative,-1,operations,safety
+contaminated runway,negative,-1,safety,safety
+cramped,negative,-1,comfort,passenger
+crash,negative,-3,safety,safety
+critical failure,negative,-1,safety,safety
+crosswind hazard,negative,-1,operations,safety
+crowded,negative,-1,comfort,passenger
+damaged baggage,negative,-1,baggage,passenger
+deeply disappointing,negative,-1,operations,safety
+delayed,negative,-1,schedule,passenger
+delayed baggage,negative,-1,schedule,passenger
+dirty,negative,-1,comfort,passenger
+disappointing,negative,-1,operations,safety
+discriminatory,negative,-1,service,passenger
+dismissive,negative,-1,service,passenger
+disorganized,negative,-1,operations,safety
+disrespectful,negative,-1,service,passenger
+distrustful,negative,-1,emotion,safety
+engine failure,negative,-2,safety,safety
+engine fire,negative,-3,safety,safety
+excessive waiting,negative,-1,schedule,passenger
+exhausted,negative,-1,operations,safety
+extreme turbulence,negative,-1,safety,safety
+extremely frustrating,negative,-1,operations,safety
+extremely noisy,negative,-1,comfort,passenger
+extremely unacceptable,negative,-1,operations,safety
+fatal accident,negative,-3,safety,safety
+fatality,negative,-3,safety,safety
+fatigued,negative,-1,operations,safety
+faulty equipment,negative,-1,operations,safety
+felt unsafe,negative,-2,emotion,safety
+filthy,negative,-1,comfort,passenger
+fire on board,negative,-1,safety,safety
+frustrating,negative,-1,operations,safety
+fuel leak,negative,-1,safety,safety
+fuel mismanagement,negative,-1,operations,safety
+fuel shortage,negative,-1,operations,safety
+fuel-starved,negative,-1,operations,safety
+go-around,negative,-1,operations,safety
+grossly negligent,negative,-1,operations,safety
+ground collision,negative,-2,safety,safety
+hard landing,negative,-2,safety,safety
+heavily delayed,negative,-1,schedule,passenger
+hidden fees,negative,-1,pricing,passenger
+horrible service,negative,-1,operations,safety
+hydraulic leak,negative,-1,safety,safety
+icing,negative,-1,safety,safety
+inaccurate announcement,negative,-1,communication,passenger
+inattentive,negative,-1,operations,safety
+incident,negative,-1,safety,safety
+incompetent,negative,-1,operations,safety
+inconsistent,negative,-1,operations,safety
+incorrect information,negative,-1,communication,passenger
+indifferent,negative,-1,service,passenger
+inexperienced,negative,-1,operations,safety
+instrument failure,negative,-1,safety,safety
+irritating,negative,-1,operations,safety
+jam-packed,negative,-1,operations,safety
+lack of information,negative,-1,communication,passenger
+last-minute cancellation,negative,-1,operations,safety
+lightning strike,negative,-1,safety,safety
+limited legroom,negative,-1,comfort,passenger
+long delay,negative,-1,operations,safety
+long line,negative,-1,schedule,passenger
+long queue,negative,-1,schedule,passenger
+long waiting time,negative,-1,schedule,passenger
+loss of communication,negative,-1,communication,passenger
+loss of separation,negative,-1,operations,safety
+lost baggage,negative,-1,baggage,passenger
+lost trust,negative,-1,emotion,safety
+low visibility,negative,-1,safety,safety
+major accident,negative,-3,safety,safety
+major incident,negative,-1,safety,safety
+malfunctioning,negative,-1,operations,safety
+malfunctioning equipment,negative,-1,operations,safety
+microburst,negative,-1,safety,safety
+mid-air collision,negative,-3,safety,safety
+misconnection,negative,-1,schedule,passenger
+mishandled baggage,negative,-1,baggage,passenger
+misleading information,negative,-1,communication,passenger
+missed connection,negative,-1,schedule,passenger
+missed flight,negative,-1,operations,safety
+missing baggage,negative,-1,baggage,passenger
+narrow seat,negative,-1,comfort,passenger
+navigation error,negative,-1,operations,safety
+near miss,negative,-1,operations,safety
+negligent,negative,-1,operations,safety
+never again,negative,-1,operations,safety
+nightmare flight,negative,-1,operations,safety
+no announcement,negative,-1,communication,passenger
+no legroom,negative,-1,comfort,passenger
+noisy,negative,-1,comfort,passenger
+non-compliant,negative,-1,operations,safety
+not recommended,negative,-1,operations,safety
+obsolete,negative,-1,operations,safety
+oil leak,negative,-1,safety,safety
+outdated,negative,-1,operations,safety
+overbooked,negative,-1,operations,safety
+overcharged,negative,-1,pricing,passenger
+overcrowded,negative,-1,comfort,passenger
+overloaded,negative,-1,operations,safety
+overpriced,negative,-1,pricing,passenger
+overshoot,negative,-1,safety,safety
+oversold flight,negative,-1,operations,safety
+oversold tickets,negative,-1,operations,safety
+overweight aircraft,negative,-1,operations,safety
+overworked,negative,-1,operations,safety
+packed flight,negative,-1,operations,safety
+panic,negative,-1,emotion,safety
+panic on board,negative,-1,emotion,safety
+poor communication,negative,-1,communication,passenger
+poor coordination,negative,-1,operations,safety
+poor planning,negative,-1,operations,safety
+poor service,negative,-1,operations,safety
+poor visibility,negative,-1,safety,safety
+poorly maintained,negative,-1,operations,safety
+poorly organized,negative,-1,operations,safety
+poorly trained,negative,-1,operations,safety
+procedural violation,negative,-1,operations,safety
+radio failure,negative,-1,safety,safety
+rapid decompression,negative,-1,safety,safety
+rejected takeoff,negative,-1,operations,safety
+repeated delay,negative,-1,operations,safety
+rescheduled,negative,-1,schedule,passenger
+rude,negative,-1,service,passenger
+runway excursion,negative,-1,safety,safety
+runway incursion,negative,-1,safety,safety
+safety concern,negative,-1,operations,safety
+safety issue,negative,-1,operations,safety
+safety risk,negative,-1,operations,safety
+scared,negative,-1,emotion,safety
+security breach,negative,-1,operations,safety
+security risk,negative,-1,operations,safety
+serious incident,negative,-1,safety,safety
+serious injury,negative,-1,operations,safety
+serious violation,negative,-1,operations,safety
+severe icing,negative,-1,safety,safety
+severe turbulence,negative,-2,safety,safety
+severely delayed,negative,-1,schedule,passenger
+slippery runway,negative,-1,safety,safety
+slow boarding,negative,-1,schedule,passenger
+smoke in cabin,negative,-1,safety,safety
+smoke in cockpit,negative,-1,safety,safety
+stranded,negative,-1,schedule,passenger
+stressed,negative,-1,emotion,safety
+strong odor,negative,-1,comfort,passenger
+structural damage,negative,-1,operations,safety
+stuck at airport,negative,-1,operations,safety
+system failure,negative,-2,safety,safety
+tail strike,negative,-1,safety,safety
+tailwind hazard,negative,-1,operations,safety
+terrible service,negative,-1,operations,safety
+terrified,negative,-1,emotion,safety
+turbulence-related injury,negative,-1,safety,safety
+unacceptable,negative,-1,operations,safety
+unbalanced load,negative,-1,operations,safety
+unclear policy,negative,-1,communication,passenger
+uncomfortable,negative,-1,operations,safety
+undermaintained,negative,-1,operations,safety
+underqualified,negative,-1,operations,safety
+undershoot,negative,-1,safety,safety
+understaffed,negative,-1,operations,safety
+unfair treatment,negative,-1,operations,safety
+unfriendly,negative,-1,service,passenger
+unhelpful,negative,-1,service,passenger
+unhygienic,negative,-1,comfort,passenger
+unprofessional,negative,-1,service,passenger
+unreasonable charges,negative,-1,pricing,passenger
+unreliable,negative,-1,operations,safety
+unresponsive,negative,-1,operations,safety
+unsafe,negative,-2,operations,safety
+unsafe feeling,negative,-2,emotion,safety
+unsanitary,negative,-1,comfort,passenger
+unstable approach,negative,-1,safety,safety
+untrained,negative,-1,operations,safety
+very cramped,negative,-1,comfort,passenger
+very dirty,negative,-1,comfort,passenger
+very disappointing,negative,-1,operations,safety
+very stressed,negative,-1,emotion,safety
+very uncomfortable,negative,-1,operations,safety
+violation,negative,-1,operations,safety
+will not fly again,negative,-1,operations,safety
+wind shear,negative,-1,safety,safety
+worried,negative,-1,emotion,safety
+would not recommend,negative,-1,operations,safety

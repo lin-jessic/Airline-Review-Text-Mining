@@ -1,0 +1,154 @@
+term,polarity,score,category,domain
+accurate information,positive,1,communication,passenger
+advanced,positive,1,service,passenger
+affordable,positive,1,pricing,passenger
+ahead of schedule,positive,1,schedule,passenger
+alert,positive,1,training,safety
+attentive,positive,1,service,passenger
+brand-new,positive,1,service,passenger
+caring,positive,1,service,passenger
+certified,positive,1,training,safety
+child-friendly,positive,1,service,passenger
+clean,positive,1,comfort,passenger
+clear announcements,positive,1,communication,passenger
+clear instructions,positive,1,communication,passenger
+clear refund policy,positive,1,communication,passenger
+clearly communicated,positive,1,communication,passenger
+comfortable,positive,2,comfort,passenger
+comfortable journey,positive,2,comfort,passenger
+competent,positive,1,training,safety
+compliant,positive,1,safety,safety
+consistent,positive,1,service,passenger
+consistently on-time,positive,1,schedule,passenger
+controlled,positive,1,operations,safety
+convenient,positive,1,service,passenger
+cost-effective,positive,1,service,passenger
+courteous,positive,1,service,passenger
+delightful experience,positive,1,service,passenger
+easy check-in,positive,1,schedule,passenger
+eco-friendly,positive,1,service,passenger
+efficient,positive,2,service,passenger
+efficient boarding,positive,2,schedule,passenger
+elderly-friendly,positive,1,service,passenger
+empathetic,positive,1,service,passenger
+enjoyable flight,positive,1,service,passenger
+enjoyable journey,positive,1,service,passenger
+environmentally friendly,positive,1,service,passenger
+excellent,positive,3,service,passenger
+exceptional,positive,3,service,passenger
+experienced,positive,1,training,safety
+extremely comfortable,positive,2,comfort,passenger
+extremely helpful,positive,3,service,passenger
+fair treatment,positive,1,service,passenger
+family-friendly,positive,1,service,passenger
+fast check-in,positive,1,schedule,passenger
+frequent flyer friendly,positive,1,service,passenger
+friendly,positive,1,service,passenger
+fuel-efficient,positive,2,service,passenger
+fully compliant,positive,1,safety,safety
+fully trained,positive,1,training,safety
+going above and beyond,positive,1,service,passenger
+good value,positive,1,pricing,passenger
+great value,positive,1,pricing,passenger
+green operation,positive,1,service,passenger
+hassle-free,positive,1,service,passenger
+helpful,positive,1,service,passenger
+highly competent,positive,1,training,safety
+highly efficient,positive,2,service,passenger
+highly professional,positive,2,service,passenger
+highly recommended,positive,3,recommendation,passenger
+highly reliable,positive,2,service,passenger
+highly satisfied,positive,1,service,passenger
+hygienic,positive,1,comfort,passenger
+impressive,positive,1,service,passenger
+kind,positive,1,service,passenger
+licensed,positive,1,training,safety
+loyal customer,positive,1,recommendation,passenger
+memorable flight,positive,1,service,passenger
+modern,positive,1,service,passenger
+new aircraft,positive,1,service,passenger
+observant,positive,1,service,passenger
+on schedule,positive,1,schedule,passenger
+on-time,positive,1,schedule,passenger
+operationally efficient,positive,2,service,passenger
+optimized,positive,1,service,passenger
+outstanding,positive,3,service,passenger
+patient,positive,1,service,passenger
+peaceful,positive,1,service,passenger
+pleasant flight,positive,1,service,passenger
+pleasant trip,positive,1,service,passenger
+polite,positive,1,service,passenger
+precise approach,positive,1,operations,safety
+precise navigation,positive,1,operations,safety
+preemptive,positive,1,service,passenger
+proactive,positive,1,service,passenger
+professional,positive,2,service,passenger
+prompt response,positive,1,communication,passenger
+punctual,positive,1,service,passenger
+qualified,positive,1,training,safety
+quick boarding,positive,1,schedule,passenger
+quick to respond,positive,1,service,passenger
+quiet,positive,1,comfort,passenger
+reasonably priced,positive,1,pricing,passenger
+regulatory-compliant,positive,1,safety,safety
+relaxed,positive,1,service,passenger
+relaxing,positive,1,service,passenger
+reliable,positive,2,service,passenger
+renovated terminal,positive,1,service,passenger
+responsive,positive,1,communication,passenger
+risk-aware,positive,1,safety,safety
+risk-controlled,positive,1,safety,safety
+roomy,positive,1,comfort,passenger
+safe,positive,2,safety,safety
+safer,positive,2,safety,safety
+safety-first,positive,2,safety,safety
+safety-focused,positive,2,safety,safety
+safety-oriented,positive,2,safety,safety
+sanitized,positive,1,comfort,passenger
+satisfied,positive,1,service,passenger
+satisfied with safety,positive,2,safety,safety
+satisfied with service,positive,1,service,passenger
+seamless,positive,1,service,passenger
+seamless transfer,positive,1,schedule,passenger
+seasoned,positive,1,service,passenger
+secure,positive,2,safety,safety
+secured,positive,2,safety,safety
+security-conscious,positive,1,safety,safety
+silent,positive,1,service,passenger
+skilled,positive,1,training,safety
+smooth,positive,2,service,passenger
+smooth approach,positive,2,operations,safety
+smooth flight,positive,2,service,passenger
+smooth journey,positive,2,service,passenger
+smooth landing,positive,2,operations,safety
+spacious,positive,1,comfort,passenger
+spotless,positive,1,comfort,passenger
+stable,positive,1,service,passenger
+stable descent,positive,1,operations,safety
+state-of-the-art,positive,1,service,passenger
+streamlined,positive,1,service,passenger
+strongly recommended,positive,3,recommendation,passenger
+supportive,positive,1,service,passenger
+sustainable,positive,1,service,passenger
+tidy,positive,1,comfort,passenger
+transparent pricing,positive,1,pricing,passenger
+under control,positive,1,service,passenger
+understanding,positive,1,service,passenger
+upgraded cabin,positive,1,service,passenger
+very attentive,positive,1,service,passenger
+very clean,positive,1,comfort,passenger
+very comfortable,positive,2,comfort,passenger
+very convenient,positive,1,service,passenger
+very experienced,positive,1,training,safety
+very friendly,positive,1,service,passenger
+very satisfied,positive,1,service,passenger
+vigilant,positive,1,training,safety
+warm crew,positive,1,service,passenger
+welcoming,positive,1,service,passenger
+well-controlled,positive,1,operations,safety
+well-lit,positive,1,service,passenger
+well-trained,positive,1,training,safety
+well-ventilated,positive,1,comfort,passenger
+went the extra mile,positive,3,service,passenger
+will fly again,positive,3,recommendation,passenger
+would recommend,positive,1,service,passenger
