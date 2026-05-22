@@ -1,0 +1,368 @@
+﻿term,polarity,score,category,domain,source_file,is_passenger_relevant
+aborted takeoff,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+abruptly cancelled,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+accident,negative,-2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+accurate information,positive,1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+advanced,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+affordable,positive,1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+ahead of schedule,positive,1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+alert,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+annoying,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+anxious,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+arrogant,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+attentive,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+autopilot failure,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+awful experience,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+bad experience,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+bad service,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+bad smell,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+baggage not delivered,negative,-1,baggage,passenger,aviation_sentiment_lexicon_full.csv,True
+biased,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+bird strike,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+brand-new,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+broken baggage,negative,-1,baggage,passenger,aviation_sentiment_lexicon_full.csv,True
+broken belt,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+broken screen,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+broken seat,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+cabin depressurization,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+cancelled,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+careless,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+caring,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+catastrophic failure,negative,-3,safety,safety,aviation_sentiment_lexicon_full.csv,False
+certified,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+chaotic boarding,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+child-friendly,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+clean,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+clear announcements,positive,1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+clear instructions,positive,1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+clear refund policy,positive,1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+clearly communicated,positive,1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+cold staff,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+collision,negative,-2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+comfortable,positive,2,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+comfortable journey,positive,2,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+communication failure,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+competent,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+compliant,positive,1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+concerned,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+conflicting information,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+confusing policy,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+consistent,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+consistently on-time,positive,1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+constant delay,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+contaminated runway,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+controlled,positive,1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+convenient,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+cost-effective,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+courteous,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+cramped,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+crash,negative,-3,safety,safety,aviation_sentiment_lexicon_full.csv,False
+critical failure,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+crosswind hazard,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+crowded,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+damaged baggage,negative,-1,baggage,passenger,aviation_sentiment_lexicon_full.csv,True
+deeply disappointing,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+delayed,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+delayed baggage,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+delightful experience,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+dirty,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+disappointing,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+discriminatory,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+dismissive,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+disorganized,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+disrespectful,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+distrustful,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+easy check-in,positive,1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+eco-friendly,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+efficient,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+efficient boarding,positive,2,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+elderly-friendly,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+empathetic,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+engine failure,negative,-2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+engine fire,negative,-3,safety,safety,aviation_sentiment_lexicon_full.csv,False
+enjoyable flight,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+enjoyable journey,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+environmentally friendly,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+excellent,positive,3,service,passenger,aviation_sentiment_lexicon_full.csv,True
+exceptional,positive,3,service,passenger,aviation_sentiment_lexicon_full.csv,True
+excessive waiting,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+exhausted,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+experienced,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+extreme turbulence,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+extremely comfortable,positive,2,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+extremely frustrating,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+extremely helpful,positive,3,service,passenger,aviation_sentiment_lexicon_full.csv,True
+extremely noisy,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+extremely unacceptable,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+fair treatment,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+family-friendly,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+fast check-in,positive,1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+fatal accident,negative,-3,safety,safety,aviation_sentiment_lexicon_full.csv,False
+fatality,negative,-3,safety,safety,aviation_sentiment_lexicon_full.csv,False
+fatigued,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+faulty equipment,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+felt unsafe,negative,-2,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+filthy,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+fire on board,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+frequent flyer friendly,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+friendly,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+frustrating,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+fuel leak,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+fuel mismanagement,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+fuel shortage,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+fuel-efficient,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+fuel-starved,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+fully compliant,positive,1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+fully trained,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+go-around,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+going above and beyond,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+good value,positive,1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+great value,positive,1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+green operation,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+grossly negligent,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+ground collision,negative,-2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+hard landing,negative,-2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+hassle-free,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+heavily delayed,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+helpful,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+hidden fees,negative,-1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+highly competent,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+highly efficient,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+highly professional,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+highly recommended,positive,3,recommendation,passenger,aviation_sentiment_lexicon_full.csv,True
+highly reliable,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+highly satisfied,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+horrible service,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+hydraulic leak,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+hygienic,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+icing,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+impressive,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+inaccurate announcement,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+inattentive,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+incident,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+incompetent,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+inconsistent,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+incorrect information,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+indifferent,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+inexperienced,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+instrument failure,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+irritating,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+jam-packed,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+kind,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+lack of information,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+last-minute cancellation,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+licensed,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+lightning strike,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+limited legroom,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+long delay,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+long line,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+long queue,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+long waiting time,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+loss of communication,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+loss of separation,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+lost baggage,negative,-1,baggage,passenger,aviation_sentiment_lexicon_full.csv,True
+lost trust,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+low visibility,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+loyal customer,positive,1,recommendation,passenger,aviation_sentiment_lexicon_full.csv,True
+major accident,negative,-3,safety,safety,aviation_sentiment_lexicon_full.csv,False
+major incident,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+malfunctioning,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+malfunctioning equipment,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+memorable flight,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+microburst,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+mid-air collision,negative,-3,safety,safety,aviation_sentiment_lexicon_full.csv,False
+misconnection,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+mishandled baggage,negative,-1,baggage,passenger,aviation_sentiment_lexicon_full.csv,True
+misleading information,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+missed connection,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+missed flight,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+missing baggage,negative,-1,baggage,passenger,aviation_sentiment_lexicon_full.csv,True
+modern,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+narrow seat,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+navigation error,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+near miss,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+negligent,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+never again,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+new aircraft,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+nightmare flight,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+no announcement,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+no legroom,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+noisy,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+non-compliant,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+not recommended,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+observant,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+obsolete,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+oil leak,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+on schedule,positive,1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+on-time,positive,1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+operationally efficient,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+optimized,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+outdated,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+outstanding,positive,3,service,passenger,aviation_sentiment_lexicon_full.csv,True
+overbooked,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+overcharged,negative,-1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+overcrowded,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+overloaded,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+overpriced,negative,-1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+overshoot,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+oversold flight,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+oversold tickets,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+overweight aircraft,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+overworked,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+packed flight,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+panic,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+panic on board,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+patient,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+peaceful,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+pleasant flight,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+pleasant trip,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+polite,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+poor communication,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+poor coordination,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+poor planning,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+poor service,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+poor visibility,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+poorly maintained,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+poorly organized,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+poorly trained,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+precise approach,positive,1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+precise navigation,positive,1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+preemptive,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+proactive,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+procedural violation,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+professional,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+prompt response,positive,1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+punctual,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+qualified,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+quick boarding,positive,1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+quick to respond,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+quiet,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+radio failure,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+rapid decompression,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+reasonably priced,positive,1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+regulatory-compliant,positive,1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+rejected takeoff,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+relaxed,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+relaxing,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+reliable,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+renovated terminal,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+repeated delay,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+rescheduled,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+responsive,positive,1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+risk-aware,positive,1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+risk-controlled,positive,1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+roomy,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+rude,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+runway excursion,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+runway incursion,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+safe,positive,2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+safer,positive,2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+safety concern,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+safety issue,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+safety risk,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+safety-first,positive,2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+safety-focused,positive,2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+safety-oriented,positive,2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+sanitized,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+satisfied,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+satisfied with safety,positive,2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+satisfied with service,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+scared,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+seamless,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+seamless transfer,positive,1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+seasoned,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+secure,positive,2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+secured,positive,2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+security breach,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+security risk,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+security-conscious,positive,1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+serious incident,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+serious injury,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+serious violation,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+severe icing,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+severe turbulence,negative,-2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+severely delayed,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+silent,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+skilled,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+slippery runway,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+slow boarding,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+smoke in cabin,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+smoke in cockpit,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+smooth,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+smooth approach,positive,2,operations,safety,aviation_sentiment_lexicon_full.csv,True
+smooth flight,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+smooth journey,positive,2,service,passenger,aviation_sentiment_lexicon_full.csv,True
+smooth landing,positive,2,operations,safety,aviation_sentiment_lexicon_full.csv,True
+spacious,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+spotless,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+stable,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+stable descent,positive,1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+state-of-the-art,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+stranded,negative,-1,schedule,passenger,aviation_sentiment_lexicon_full.csv,True
+streamlined,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+stressed,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+strong odor,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+strongly recommended,positive,3,recommendation,passenger,aviation_sentiment_lexicon_full.csv,True
+structural damage,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+stuck at airport,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+supportive,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+sustainable,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+system failure,negative,-2,safety,safety,aviation_sentiment_lexicon_full.csv,False
+tail strike,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+tailwind hazard,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+terrible service,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+terrified,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+tidy,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+transparent pricing,positive,1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+turbulence-related injury,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+unacceptable,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+unbalanced load,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+unclear policy,negative,-1,communication,passenger,aviation_sentiment_lexicon_full.csv,True
+uncomfortable,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+under control,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+undermaintained,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+underqualified,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+undershoot,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+understaffed,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+understanding,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+unfair treatment,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+unfriendly,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+unhelpful,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+unhygienic,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+unprofessional,negative,-1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+unreasonable charges,negative,-1,pricing,passenger,aviation_sentiment_lexicon_full.csv,True
+unreliable,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+unresponsive,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+unsafe,negative,-2,operations,safety,aviation_sentiment_lexicon_full.csv,True
+unsafe feeling,negative,-2,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+unsanitary,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+unstable approach,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+untrained,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+upgraded cabin,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+very attentive,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+very clean,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+very comfortable,positive,2,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+very convenient,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+very cramped,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+very dirty,negative,-1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+very disappointing,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+very experienced,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+very friendly,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+very satisfied,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+very stressed,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+very uncomfortable,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+vigilant,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+violation,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+warm crew,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+welcoming,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+well-controlled,positive,1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+well-lit,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True
+well-trained,positive,1,training,safety,aviation_sentiment_lexicon_full.csv,False
+well-ventilated,positive,1,comfort,passenger,aviation_sentiment_lexicon_full.csv,True
+went the extra mile,positive,3,service,passenger,aviation_sentiment_lexicon_full.csv,True
+will fly again,positive,3,recommendation,passenger,aviation_sentiment_lexicon_full.csv,True
+will not fly again,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+wind shear,negative,-1,safety,safety,aviation_sentiment_lexicon_full.csv,False
+worried,negative,-1,emotion,safety,aviation_sentiment_lexicon_full.csv,True
+would not recommend,negative,-1,operations,safety,aviation_sentiment_lexicon_full.csv,True
+would recommend,positive,1,service,passenger,aviation_sentiment_lexicon_full.csv,True

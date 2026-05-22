@@ -1,0 +1,4 @@
+﻿label_source,n_used,accuracy,precision_macro,recall_macro,f1_macro,positive_count,negative_count,note,neutral_count
+high_confidence_rating_recommendation_proxy,17340,0.8585,0.8721,0.8575,0.857,8760,8580,Binary comparison using positive/negative labels only.,
+all_20k_recommended_label_proxy,19728,0.8289,0.8411,0.8285,0.8272,9912,9816,Binary comparison using positive/negative labels only.,
+all_20k_rating_label_proxy_three_class,20000,0.7544,0.5628,0.5674,0.5432,8907,8972,Three-class comparison. Rating 5-6 is treated as neutral.,2121.0

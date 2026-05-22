@@ -1,0 +1,5 @@
+﻿score_column,threshold,n_proxy_reviews,accuracy,macro_f1,macro_precision,macro_recall,neutral_rate,negative_accuracy,positive_accuracy,negative_count,positive_count
+vader_adjusted_full,0.05,17567,0.8462,0.8499,0.8723,0.8457,0.0133,0.7423,0.9491,8743,8824
+vader_adjusted_sentence_avg,0.05,17567,0.7847,0.8373,0.9227,0.7841,0.14,0.6484,0.9198,8743,8824
+vader_original_full,0.05,17567,0.8474,0.8512,0.8721,0.847,0.0129,0.7481,0.9458,8743,8824
+vader_original_sentence_avg,0.05,17567,0.7856,0.8378,0.9207,0.785,0.1379,0.6549,0.915,8743,8824

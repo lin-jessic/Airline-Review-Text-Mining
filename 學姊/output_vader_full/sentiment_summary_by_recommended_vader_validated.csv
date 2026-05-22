@@ -1,0 +1,3 @@
+﻿Recommended,review_count,avg_sentiment,median_sentiment,positive_count,neutral_count,negative_count,avg_overall_score,avg_sentence_count
+no,10000,-0.3619,-0.6647,2612,184,7204,1.8897,9.3011
+yes,10000,0.7474,0.9228,9149,88,763,8.3313,7.9394

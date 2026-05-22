@@ -1,0 +1,14 @@
+{
+  "score_column": "vader_original_full",
+  "threshold": 0.05,
+  "n_proxy_reviews": 17567,
+  "accuracy": 0.8474,
+  "macro_f1": 0.8512,
+  "macro_precision": 0.8721,
+  "macro_recall": 0.847,
+  "neutral_rate": 0.0129,
+  "negative_accuracy": 0.7481,
+  "positive_accuracy": 0.9458,
+  "negative_count": 8743,
+  "positive_count": 8824
+}

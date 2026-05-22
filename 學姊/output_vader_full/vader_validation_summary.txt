@@ -1,0 +1,58 @@
+Advanced VADER Validation and Full Re-scoring Summary
+========================================================================
+
+Purpose
+------------------------------------------------------------------------
+This script validates and updates the VADER sentiment analysis method for the airline review project.
+It compares original VADER and aviation-domain adjusted VADER, full-review input and sentence-average input,
+and three thresholds: +/-0.05, +/-0.10, and +/-0.30.
+
+Important Methodological Note
+------------------------------------------------------------------------
+This step only affects VADER sentiment analysis outputs. It does not modify TF-IDF, LDA, BERTopic, sampling, topic words, topic sizes, or representative reviews.
+
+Dataset
+------------------------------------------------------------------------
+Total reviews scored: 20000
+Recommended = yes: 10000
+Recommended = no : 10000
+
+Sentence Statistics
+------------------------------------------------------------------------
+total_reviews: 20000
+avg_sentence_count_period: 8.6203
+median_sentence_count_period: 7.0
+reviews_over_5_sentences: 14291
+share_over_5_sentences: 0.7146
+max_sentence_count_period: 58
+split_mode: period_only
+
+Aviation Lexicon
+------------------------------------------------------------------------
+Applied aviation lexicon terms: 293
+Passenger-review filter enabled: True
+Multi-word phrases were converted into underscore keys before VADER scoring, for example 'bad service' -> 'bad_service'.
+
+Best Configuration
+------------------------------------------------------------------------
+Best score column: vader_original_full
+Best threshold: +/-0.05
+Accuracy: 0.8474
+Macro F1: 0.8512
+Neutral rate: 0.0129
+
+Best Threshold by Method
+------------------------------------------------------------------------
+vader_adjusted_full | threshold +/-0.05 | accuracy=0.8462 | macro_f1=0.8499 | neutral_rate=0.0133
+vader_adjusted_sentence_avg | threshold +/-0.05 | accuracy=0.7847 | macro_f1=0.8373 | neutral_rate=0.14
+vader_original_full | threshold +/-0.05 | accuracy=0.8474 | macro_f1=0.8512 | neutral_rate=0.0129
+vader_original_sentence_avg | threshold +/-0.05 | accuracy=0.7856 | macro_f1=0.8378 | neutral_rate=0.1379
+
+Final Sentiment Summary by Recommended
+------------------------------------------------------------------------
+Recommended=no | count=10000 | avg_sentiment=-0.3619 | median=-0.6647 | positive=2612 | neutral=184 | negative=7204 | avg_score=1.8897
+Recommended=yes | count=10000 | avg_sentiment=0.7474 | median=0.9228 | positive=9149 | neutral=88 | negative=763 | avg_score=8.3313
+
+Recommended Report Wording
+------------------------------------------------------------------------
+VADER sentiment analysis was validated by comparing different thresholds, input forms, and aviation-domain lexicon settings. The final setting was selected based on high-confidence proxy labels derived from rating and recommendation labels. This validation step only updates sentiment analysis outputs and does not affect the LDA or BERTopic topic modeling results.

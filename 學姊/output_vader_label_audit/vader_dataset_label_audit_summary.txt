@@ -1,0 +1,39 @@
+VADER Dataset Label Audit Summary
+========================================================================
+
+Purpose
+------------------------------------------------------------------------
+This audit compares the final VADER labels with dataset-derived proxy labels.
+The labels are created automatically from the dataset's OverallScore and Recommended fields,
+so we do not need to manually read and label thousands of reviews.
+
+Important Methodological Note
+------------------------------------------------------------------------
+This is not manual human annotation. It is automatic proxy labeling based on existing dataset fields.
+High-confidence proxy labels remain the strictest validation source.
+Recommended-based and rating-based labels are supplementary evidence because they may contain noise.
+
+Dataset Coverage
+------------------------------------------------------------------------
+Total reviews in final VADER result: 20000
+Recommended = yes: 10000
+Recommended = no : 10000
+High-confidence proxy rows: 17567
+Recommended-based label rows: 20000
+Rating-based label rows: 20000
+
+Consistency between Recommended and Rating
+------------------------------------------------------------------------
+consistent: 17567
+medium_rating: 2121
+conflict: 312
+
+Alignment Metrics
+------------------------------------------------------------------------
+high_confidence_rating_recommendation_proxy | n=17340 | accuracy=0.8585 | macro_f1=0.857 | note=Binary comparison using positive/negative labels only.
+all_20k_recommended_label_proxy | n=19728 | accuracy=0.8289 | macro_f1=0.8272 | note=Binary comparison using positive/negative labels only.
+all_20k_rating_label_proxy_three_class | n=20000 | accuracy=0.7544 | macro_f1=0.5432 | note=Three-class comparison. Rating 5-6 is treated as neutral.
+
+Recommended Report Wording
+------------------------------------------------------------------------
+To further support the VADER sentiment results, we created automatic proxy labels from the dataset's Recommended and OverallScore fields. The strictest validation used high-confidence proxy labels, where low ratings with not recommended reviews were treated as negative and high ratings with recommended reviews were treated as positive. All 20,000 reviews were scored by VADER, while the high-confidence subset was used for the main validation.
