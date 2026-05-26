@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airline Reviews Text Mining Dashboard 2 | Full Integration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">✈</div>
+        <div>
+          <h1 data-i18n="appTitle">航空評論文字探勘</h1>
+          <p data-i18n="appSubtitle">完整分析結果 Dashboard</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-btn active" data-page="overview" data-i18n="navOverview">專題設計</button>
+        <button class="nav-btn" data-page="keywords" data-i18n="navKeywords">TF / TF-IDF</button>
+        <button class="nav-btn" data-page="sentiment" data-i18n="navSentiment">情緒分析結果</button>
+        <button class="nav-btn" data-page="vaderValidation" data-i18n="navVaderValidation">VADER 驗證比較</button>
+        <button class="nav-btn" data-page="labelAudit" data-i18n="navLabelAudit">資料標籤佐證</button>
+        <button class="nav-btn" data-page="lexicon" data-i18n="navLexicon">航空詞彙調整</button>
+        <button class="nav-btn" data-page="lda" data-i18n="navLda">LDA 主題模型</button>
+        <button class="nav-btn" data-page="reviews" data-i18n="navReviews">代表性評論</button>
+        <button class="nav-btn" data-page="bertopic" data-i18n="navBertopic">BERTopic 主題分析</button>
+        <button class="nav-btn" data-page="modelComparison" data-i18n="navModelComparison">模型比較與 RQ2</button>
+        <button class="nav-btn" data-page="rq3" data-i18n="navRq3">RQ3 跨時間與航空公司</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="langToggle" class="lang-toggle">EN</button>
+        <p data-i18n="langHint">點擊切換英文介面</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">Airline Reviews Text Mining Final Project</p>
+          <h2 id="pageTitle" data-i18n="pageTitleOverview">專題設計與資料策略</h2>
+        </div>
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <span data-i18n="statusText">讀取分析結果與圖表</span>
+        </div>
+      </header>
+
+      <section id="overview" class="page active">
+        <div class="hero-card">
+          <div>
+            <p class="eyebrow" data-i18n="overviewEyebrow">Balanced Sampling Design</p>
+            <h3 data-i18n="overviewTitle">以 Recommended 做分層抽樣，讓 LDA 與 BERTopic 公平比較</h3>
+            <p data-i18n="overviewDesc">本專題將 Airline Reviews dataset 依照 Recommended 欄位縮減為平衡資料集：yes 10,000 筆、no 10,000 筆，共 20,000 筆。Member B 使用同一份 sampled_20k_with_tokens.csv 完成 TF/TF-IDF、VADER sentiment analysis 與 LDA baseline。</p>
+          </div>
+          <div class="metric-grid">
+            <div class="metric"><span data-i18n="metricTotal">總評論數</span><strong>20,000</strong></div>
+            <div class="metric"><span data-i18n="metricYes">Recommended = yes</span><strong>10,000</strong></div>
+            <div class="metric"><span data-i18n="metricNo">Recommended = no</span><strong>10,000</strong></div>
+            <div class="metric"><span data-i18n="metricSeed">Random state</span><strong>42</strong></div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <article class="card"><h4 data-i18n="memberA">Member A：資料與前處理</h4><p data-i18n="memberADesc">負責資料清理、分層抽樣、tokens 欄位、token_count 與 EDA 圖表。</p></article>
+          <article class="card highlight"><h4 data-i18n="memberB">Member B：傳統方法、VADER 與 LDA</h4><p data-i18n="memberBDesc">負責 TF/TF-IDF、VADER 嚴謹驗證、航空詞彙調整比較、資料標籤佐證、LDA baseline 與代表性評論。</p></article>
+          <article class="card"><h4 data-i18n="memberC">Member C：BERTopic 與展示</h4><p data-i18n="memberCDesc">負責 BERTopic、LDA vs BERTopic 比較、dashboard / presentation 整合。</p></article>
+        </div>
+        <div class="card">
+          <h4 data-i18n="methodFlow">Member B 分析流程</h4>
+          <div class="timeline">
+            <div><span>1</span><p data-i18n="flow1">讀取 sampled_20k_with_tokens.csv</p></div>
+            <div><span>2</span><p data-i18n="flow2">使用 review_cleaned 做 TF / TF-IDF</p></div>
+            <div><span>3</span><p data-i18n="flow3">使用 Review 原文做 VADER，並驗證四種設定</p></div>
+            <div><span>4</span><p data-i18n="flow4">使用 tokens 做 LDA topic modeling</p></div>
+            <div><span>5</span><p data-i18n="flow5">整合圖表、CSV、代表性評論與人工解釋</p></div>
+          </div>
+        </div>
+        <div class="card callout">
+          <h4 data-i18n="bestFindingTitle">本次 VADER 驗證的主要結論</h4>
+          <p data-i18n="bestFindingDesc">經過完整 20,000 筆重新評分與 17,567 筆 high-confidence proxy validation 後，最佳設定為原生 VADER、整段 Review 輸入、預設門檻 ±0.05。航空詞彙調整與逐句平均都有被測試，但沒有比原生整段輸入更好。</p>
+        </div>
+      </section>
+
+      <section id="keywords" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">TF / TF-IDF</p><h3 data-i18n="keywordsTitle">推薦與不推薦評論的關鍵字差異</h3></div>
+          <p data-i18n="keywordsDesc">TF-IDF 用於找出各群組較具代表性的詞，協助比較 Recommended = yes 與 Recommended = no 的語意差異。</p>
+        </div>
+        <div class="image-panel"><img src="../output_2/fig_tfidf_comparison.png" alt="TF-IDF comparison" onerror="this.src='../output/fig_tfidf_comparison.png'" /></div>
+        <div class="card">
+          <div class="table-head">
+            <h4 data-i18n="tfidfTableTitle">TF-IDF yes/no 比較表</h4>
+            <input id="keywordSearch" type="text" data-i18n-placeholder="searchPlaceholder" placeholder="搜尋 keyword..." />
+          </div>
+          <div class="table-wrap"><table id="tfidfTable"></table></div>
+        </div>
+        <div class="insight-grid">
+          <article class="insight yes"><h4 data-i18n="yesInsightTitle">推薦評論常見語意</h4><p data-i18n="yesInsight">通常偏向服務、舒適度、友善、良好經驗，例如 good、crew、friendly、comfortable、excellent。</p></article>
+          <article class="insight no"><h4 data-i18n="noInsightTitle">不推薦評論常見語意</h4><p data-i18n="noInsight">通常偏向延誤、等待、客服、行李、票務與額外費用，例如 delayed、bag、ticket、customer service、worst、pay。</p></article>
+        </div>
+      </section>
+
+      <section id="sentiment" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">Final VADER Sentiment</p><h3 data-i18n="sentimentTitle">最終 VADER 情緒分析結果</h3></div>
+          <p data-i18n="sentimentDesc">最終設定採用原生 VADER、整段 Review 輸入、預設門檻 ±0.05。此頁呈現 Recommended yes/no 的最終情緒差異。</p>
+        </div>
+        <div id="sentimentMetrics" class="metric-grid wide"></div>
+        <div class="grid-2">
+          <div class="image-panel"><img src="../output_vader_full/fig_vader_final_avg_sentiment.png" alt="Final average VADER sentiment" /></div>
+          <div class="image-panel"><img src="../output_vader_full/fig_vader_final_sentiment_distribution.png" alt="Final VADER sentiment distribution" /></div>
+        </div>
+        <div class="card">
+          <h4 data-i18n="sentimentSummaryTitle">Validated VADER Summary by Recommended</h4>
+          <div class="table-wrap compact"><table id="sentimentTable"></table></div>
+          <p class="note" data-i18n="sentimentNote">Recommended = yes 的平均情緒分數約為 0.747，Recommended = no 約為 -0.362，方向與推薦標籤與 OverallScore 一致。</p>
+        </div>
+      </section>
+
+      <section id="vaderValidation" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">VADER Method Validation</p><h3 data-i18n="vaderValidationTitle">四種 VADER 設定與三種門檻比較</h3></div>
+          <p data-i18n="vaderValidationDesc">此頁比較原生 VADER / 航空詞彙調整 VADER，以及整段 Review / 逐句平均兩種輸入形式，並測試 ±0.05、±0.10、±0.30 三種門檻。</p>
+        </div>
+        <div class="grid-2">
+          <div class="image-panel"><img src="../output_vader_full/fig_vader_threshold_method_accuracy.png" alt="VADER threshold method accuracy" /></div>
+          <div class="image-panel"><img src="../output_vader_full/fig_vader_best_method_accuracy.png" alt="Best VADER method accuracy" /></div>
+        </div>
+        <div class="metric-grid wide" id="vaderBestMetrics"></div>
+        <div class="card">
+          <h4 data-i18n="vaderThresholdTableTitle">Threshold and Method Comparison</h4>
+          <div class="table-wrap"><table id="vaderComparisonTable"></table></div>
+        </div>
+        <div class="grid-2">
+          <article class="card highlight"><h4 data-i18n="whyFullReviewTitle">為什麼最後選整段 Review？</h4><p data-i18n="whyFullReviewDesc">雖然逐句平均可以避免長評論正負情緒互相抵銷，但實際驗證結果顯示，整段 Review 的 accuracy 明顯較高。</p></article>
+          <article class="card highlight"><h4 data-i18n="whyOriginalTitle">為什麼保留原生 VADER？</h4><p data-i18n="whyOriginalDesc">航空詞彙調整後的 accuracy 沒有明顯提升，代表許多航空評論的情緒來自整體語境，不只是單一航空詞彙。</p></article>
+        </div>
+        <div class="card"><h4 data-i18n="sentenceStatsTitle">長評論與逐句切分驗證</h4><div class="table-wrap compact"><table id="sentenceStatsTable"></table></div></div>
+      </section>
+
+      <section id="labelAudit" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">Dataset-derived Proxy Labels</p><h3 data-i18n="labelAuditTitle">用資料集自帶分數與推薦標籤佐證 VADER 結果</h3></div>
+          <p data-i18n="labelAuditDesc">除了 high-confidence proxy validation，本 dashboard 也加入資料集自帶標籤一致性檢查。</p>
+        </div>
+        <div class="image-panel"><img src="../output_vader_label_audit/fig_vader_dataset_label_alignment.png" alt="Dataset label alignment" /></div>
+        <div class="card"><h4 data-i18n="labelAuditTableTitle">Dataset Label Alignment Metrics</h4><div class="table-wrap"><table id="labelAuditTable"></table></div></div>
+        <div class="grid-3">
+          <article class="card"><h4 data-i18n="highProxyTitle">High-confidence proxy</h4><p data-i18n="highProxyDesc">Rating 1–4 且 Recommended = no 標為 negative；Rating 7–10 且 Recommended = yes 標為 positive。</p></article>
+          <article class="card"><h4 data-i18n="recProxyTitle">Recommended proxy</h4><p data-i18n="recProxyDesc">直接用 Recommended = yes/no 對應 positive/negative，可檢查 VADER 與推薦行為的一致性。</p></article>
+          <article class="card"><h4 data-i18n="ratingProxyTitle">Rating proxy</h4><p data-i18n="ratingProxyDesc">OverallScore 7–10 為 positive、5–6 為 neutral、1–4 為 negative。</p></article>
+        </div>
+        <div class="card">
+          <h4 data-i18n="confusionTitle">Confusion Matrices</h4>
+          <div class="grid-3 table-grid">
+            <div><p class="mini-title">High-confidence</p><div class="table-wrap tiny"><table id="confusionHighTable"></table></div></div>
+            <div><p class="mini-title">Recommended</p><div class="table-wrap tiny"><table id="confusionRecTable"></table></div></div>
+            <div><p class="mini-title">Rating 3-class</p><div class="table-wrap tiny"><table id="confusionRatingTable"></table></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="lexicon" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">Aviation-domain Lexicon</p><h3 data-i18n="lexiconTitle">航空領域詞彙調整與引用資料</h3></div>
+          <p data-i18n="lexiconDesc">本次 VADER 驗證引用三個航空情緒詞彙 CSV，並將適合旅客評論情境的詞彙加入 VADER lexicon，再比較調整前後效果。</p>
+        </div>
+        <div class="grid-3">
+          <article class="card source-card"><h4>aviation_negative_lexicon.csv</h4><p data-i18n="negativeLexiconDesc">航空領域負向詞彙，例如 delay、cancel、stranded、overbooked 相關語意。</p></article>
+          <article class="card source-card"><h4>aviation_positive_lexicon.csv</h4><p data-i18n="positiveLexiconDesc">航空領域正向詞彙，例如 friendly、comfortable、smooth、upgrade 相關語意。</p></article>
+          <article class="card source-card"><h4>aviation_sentiment_lexicon_full.csv</h4><p data-i18n="fullLexiconDesc">整合版航空情緒詞彙表，包含 term、polarity、score、category、domain 等欄位。</p></article>
+        </div>
+        <div id="lexiconMetrics" class="metric-grid wide"></div>
+        <div class="grid-2">
+          <div class="card"><h4 data-i18n="appliedLexiconTitle">實際套用到 VADER 的詞彙</h4><div class="table-wrap"><table id="appliedLexiconTable"></table></div></div>
+          <div class="card"><h4 data-i18n="fullLexiconTitle">引用詞彙總表預覽</h4><div class="table-wrap"><table id="fullLexiconTable"></table></div></div>
+        </div>
+        <div class="card callout"><h4 data-i18n="lexiconConclusionTitle">詞彙調整結果怎麼解釋？</h4><p data-i18n="lexiconConclusionDesc">航空詞彙調整是合理的驗證步驟，但結果顯示它沒有明顯提高 accuracy。因此本研究保留原生 VADER。</p></div>
+      </section>
+
+      <section id="lda" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">LDA Baseline</p><h3 data-i18n="ldaTitle">不推薦評論中的主要抱怨主題</h3></div>
+          <p data-i18n="ldaDesc">LDA 主要針對 Recommended = no 評論，找出 passenger complaints 的主題結構。</p>
+        </div>
+        <div class="grid-2">
+          <div class="image-panel"><img src="../output_2/fig_lda_topics.png" alt="LDA topic distribution" onerror="this.src='../output/fig_lda_topics.png'" /></div>
+          <div class="image-panel"><img src="../output_2/fig_lda_coherence_scores.png" alt="LDA coherence scores" onerror="this.src='../output/fig_lda_coherence_scores.png'" /></div>
+        </div>
+        <div class="card"><h4 data-i18n="ldaTopicsTableTitle">LDA 修正版人工主題命名</h4><div class="table-wrap"><table id="ldaTopicsTable"></table></div></div>
+        <div class="card callout">
+          <h4 data-i18n="manualLabelTitle">為什麼要人工修正 Topic Label？</h4>
+          <p data-i18n="manualLabelDesc">LDA 產生的是 topic-word distribution，不會自動理解主題名稱。因此本 dashboard 使用 output_2 的修正版。</p>
+          <a class="button-link" href="../output_2/lda_visualization.html" target="_blank" data-i18n="openLdaVis">開啟 pyLDAvis 互動視覺化</a>
+        </div>
+      </section>
+
+      <section id="reviews" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">Representative Reviews</p><h3 data-i18n="reviewsTitle">每個 LDA Topic 的代表性評論</h3></div>
+          <p data-i18n="reviewsDesc">代表性評論用來驗證 topic label 是否合理，並提供報告中的質性解釋素材。</p>
+        </div>
+        <div class="filters">
+          <label data-i18n="topicFilterLabel">選擇 Topic</label>
+          <select id="topicFilter"><option value="all" data-i18n="allTopics">全部 Topics</option></select>
+        </div>
+        <div id="reviewCards" class="review-grid"></div>
+      </section>
+
+      <!-- ====== Member C 新增分頁 ====== -->
+
+      <section id="bertopic" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">BERTopic Analysis</p><h3 data-i18n="bertopicTitle">BERTopic 主題分析結果</h3></div>
+          <p data-i18n="bertopicDesc">BERTopic 使用 sentence-transformers 將評論轉為語意向量，自動找出語意相近的抱怨主題，不需要事先指定主題數量。</p>
+        </div>
+        <div class="metric-grid wide" id="bertopicMetrics"></div>
+        <div class="grid-1">
+          <div class="image-panel large-figure">
+            <a class="figure-link" href="../output_c/fig_bertopic_top15_distribution.png" target="_blank" rel="noopener noreferrer" title="點擊放大圖表">
+              <img src="../output_c/fig_bertopic_top15_distribution.png" alt="BERTopic top 15 topics" />
+            </a>
+          </div>
+          <div class="image-panel large-figure">
+            <a class="figure-link" href="../output_c/fig_bertopic_top_keywords.png" target="_blank" rel="noopener noreferrer" title="點擊放大圖表">
+              <img src="../output_c/fig_bertopic_top_keywords.png" alt="BERTopic top keywords" />
+            </a>
+          </div>
+        </div>
+        <div class="card"><h4 data-i18n="bertopicTopicsTableTitle">BERTopic 主題分布表</h4><div class="table-wrap"><table id="bertopicTopicsTable"></table></div></div>
+        <div class="grid-2">
+          <article class="insight no"><h4 data-i18n="bertopicNoiseTitle">Topic -1 雜訊堆說明</h4><p data-i18n="bertopicNoiseDesc">BERTopic 使用 HDBSCAN 分群，語意不夠集中的評論會被歸入 topic -1。本次共有 4,300 筆（43%）被歸入雜訊堆，這是 BERTopic 的正常現象。</p></article>
+          <article class="insight yes"><h4 data-i18n="bertopicAdvTitle">BERTopic 的優勢</h4><p data-i18n="bertopicAdvDesc">BERTopic 自動找出 40 個語意群組，比 LDA 的 7 個主題更細緻，能區分出延誤問題的子類型與行李問題的細分。</p></article>
+        </div>
+      </section>
+
+      <section id="modelComparison" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">RQ2 Analysis</p><h3 data-i18n="modelCompTitle">模型比較與 RQ2 分析</h3></div>
+          <p data-i18n="modelCompDesc">比較 LDA 與 BERTopic 的主題結果，並分析不同評分群組與矛盾旅客的抱怨差異。</p>
+        </div>
+        <div class="image-panel large-figure"><a class="figure-link" href="../output_c/fig_lda_vs_bertopic_comparison.png" target="_blank" rel="noopener noreferrer" title="點擊放大圖表"><img src="../output_c/fig_lda_vs_bertopic_comparison.png" alt="LDA vs BERTopic comparison" /></a></div>
+        <div class="card"><h4 data-i18n="modelCompTableTitle">LDA vs BERTopic 主題對應表</h4><div class="table-wrap"><table id="modelCompTable"></table></div></div>
+        <div class="grid-2">
+          <article class="card highlight"><h4 data-i18n="ldaAdvTitle">LDA 的優點</h4><p data-i18n="ldaAdvDesc">7 個主題清楚易懂，每個主題筆數多，統計穩定，適合管理者快速掌握主要抱怨類型。</p></article>
+          <article class="card highlight"><h4 data-i18n="bertopicCompAdvTitle">BERTopic 的優點</h4><p data-i18n="bertopicCompAdvDesc">40 個主題更細緻，能區分 LDA 合併在一起的子主題，基於語意而非詞頻，不受詞形變化影響。</p></article>
+        </div>
+        <div class="section-head" style="margin-top:24px">
+          <div><p class="eyebrow">Rating Group Comparison</p><h3 data-i18n="ratingGroupTitle">不同評分群組的主題差異</h3></div>
+          <p data-i18n="ratingGroupDesc">將資料依 OverallScore 切分為低（1-4）、中（5-7）、高（8-10）三組，比較各組的主要抱怨主題。</p>
+        </div>
+        <div class="image-panel large-figure"><a class="figure-link" href="../output_c/fig_bertopic_rating_groups.png" target="_blank" rel="noopener noreferrer" title="點擊放大圖表"><img src="../output_c/fig_bertopic_rating_groups.png" alt="Rating group comparison" /></a></div>
+        <div class="section-head" style="margin-top:24px">
+          <div><p class="eyebrow">Contradictory Passengers</p><h3 data-i18n="contradictoryTitle">矛盾旅客分析</h3></div>
+          <p data-i18n="contradictoryDesc">分析評分 5-10 分但不推薦的旅客，找出他們與一般不滿意旅客（1-4 分不推薦）的關鍵字差異。</p>
+        </div>
+        <div class="image-panel large-figure"><a class="figure-link" href="../output_c/fig_contradictory_vs_normal.png" target="_blank" rel="noopener noreferrer" title="點擊放大圖表"><img src="../output_c/fig_contradictory_vs_normal.png" alt="Contradictory vs normal passengers" /></a></div>
+        <div class="grid-2">
+          <article class="insight yes"><h4 data-i18n="contradictoryFindingTitle">矛盾旅客的特徵</h4><p data-i18n="contradictoryFindingDesc">矛盾旅客的關鍵字以飛行體驗為主（food、cabin、crew、good），正面詞彙出現頻率高，代表他們整體體驗還可以，但特定缺點讓他們無法推薦。</p></article>
+          <article class="insight no"><h4 data-i18n="normalNoFindingTitle">一般不滿意旅客的特徵</h4><p data-i18n="normalNoFindingDesc">一般不滿意旅客的關鍵字以問題導向為主（hour、customer、never、told、delayed），反映強烈的系統性不滿。</p></article>
+        </div>
+      </section>
+
+      <section id="rq3" class="page">
+        <div class="section-head">
+          <div><p class="eyebrow">RQ3 Analysis</p><h3 data-i18n="rq3Title">跨航空公司與時間的抱怨模式比較</h3></div>
+          <p data-i18n="rq3Desc">分析不同航空公司和時間段的抱怨關鍵字，找出 industry-wide 問題和 airline-specific 問題。</p>
+        </div>
+        <div class="section-head" style="margin-top:0">
+          <div><p class="eyebrow">Airline Comparison</p><h3 data-i18n="airlineCompTitle">前10大航空公司抱怨關鍵字比較</h3></div>
+          <p data-i18n="airlineCompDesc">flight、hour、time、seat、bag、service 等詞在所有航空公司都出現（industry-wide），而 istanbul、denver、abu dhabi 等地名只在特定航空公司出現（airline-specific）。</p>
+        </div>
+        <div class="image-panel large-figure"><a class="figure-link" href="../output_c/fig_airline_keywords_heatmap_clean.png" target="_blank" rel="noopener noreferrer" title="點擊放大圖表"><img src="../output_c/fig_airline_keywords_heatmap_clean.png" alt="Airline keywords heatmap" /></a></div>
+        <div class="grid-2">
+          <article class="insight yes"><h4 data-i18n="industryWideTitle">Industry-wide 問題</h4><p data-i18n="industryWideDesc">延誤（flight、hour）、行李（bag）、座位（seat）、客服（service）是所有主要航空公司共同面對的抱怨，代表這些是航空業系統性的服務問題。</p></article>
+          <article class="insight no"><h4 data-i18n="airlineSpecificTitle">Airline-specific 問題</h4><p data-i18n="airlineSpecificDesc">地名和樞紐城市高度集中在特定航空公司，例如 istanbul（Turkish）、denver（Frontier）、abu dhabi（Etihad），反映旅客對特定航線的不滿。</p></article>
+        </div>
+        <div class="section-head" style="margin-top:24px">
+          <div><p class="eyebrow">Temporal Comparison</p><h3 data-i18n="temporalTitle">疫情前中後抱怨主題變化</h3></div>
+          <p data-i18n="temporalDesc">比較 2013-2019（疫情前）、2020-2021（疫情期間）、2022-2023（疫情後）三個時期的抱怨關鍵字差異。</p>
+        </div>
+        <div class="image-panel large-figure"><a class="figure-link" href="../output_c/fig_period_keywords.png" target="_blank" rel="noopener noreferrer" title="點擊放大圖表"><img src="../output_c/fig_period_keywords.png" alt="Period keyword comparison" /></a></div>
+        <div class="grid-3">
+          <article class="card"><h4 data-i18n="preCOVIDTitle">疫情前（2013-2019）</h4><p data-i18n="preCOVIDDesc">抱怨集中在飛行體驗：seat、food、plane、staff，旅客在意機上服務品質。</p></article>
+          <article class="card callout"><h4 data-i18n="duringCOVIDTitle">疫情期間（2020-2021）</h4><p data-i18n="duringCOVIDDesc">refund 突然躍升，cancelled 出現，反映大量航班取消和退款困難。customer service 首次進入前15名。</p></article>
+          <article class="card"><h4 data-i18n="postCOVIDTitle">疫情後（2022-2023）</h4><p data-i18n="postCOVIDDesc">bag 問題突然增加（可能因地勤人力短缺），customer service 和 ticket 問題持續，never 情緒更強烈。</p></article>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+LDA Topic,LDA Size,LDA Top Words,BERTopic Equivalent Topics,BERTopic Advantage
+Boarding Delay and Airport Waiting,1084,"hour, delay, board, time, wait, gate, airport","T5, T8, T9, T13, T18, T27, T28, T29",Separates boarding wait vs weather delay vs departure delay
+Baggage Fees and Extra Charges,1457,"seat, bag, check, pay, extra, luggage, never","T16, T17, T23, T35, T36",Separates baggage weight fees vs lost baggage vs extra charges
+Customer Service and Baggage Handling,1274,"told, airport, customer, luggage, service, call","T11, T14, T19, T24",Separates rude staff vs hotel accommodation vs lost claim
+"Flight Delay, Cancellation, and Missed Connections",1783,"hour, delay, cancel, hotel, wait, connect","T1, T4, T6, T15, T20, T26, T30",Separates cancellation vs missed connection vs delay hours
+"Booking, Refund, and Ticket Changes",1555,"cancel, book, ticket, refund, customer, email","T2, T3",Refund and cancellation clearly separated
+"Cabin Experience, Seat, Food, and Crew Service",2687,"seat, food, service, class, crew, cabin, meal","T0, T12, T22, T31, T32",Separates old aircraft vs entertainment vs business class food
+Route-specific Service Complaints,160,"air, staff, service, dubai, london, sydney","T7, T10, T21, T33, T38, T39",Identifies specific airline/region complaint patterns

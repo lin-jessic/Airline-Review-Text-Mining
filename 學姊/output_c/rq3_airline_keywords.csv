@@ -1,0 +1,151 @@
+airline,rank,keyword,tfidf_score
+American Airlines,1,american,0.097
+American Airlines,2,flight,0.073
+American Airlines,3,american airline,0.0711
+American Airlines,4,airline,0.0556
+American Airlines,5,aa,0.0385
+American Airlines,6,hour,0.034
+American Airlines,7,plane,0.031
+American Airlines,8,time,0.0305
+American Airlines,9,customer,0.0304
+American Airlines,10,get,0.0299
+American Airlines,11,dallas,0.0291
+American Airlines,12,seat,0.0266
+American Airlines,13,would,0.0247
+American Airlines,14,service,0.0244
+American Airlines,15,fly,0.0238
+Spirit Airlines,1,spirit,0.1195
+Spirit Airlines,2,flight,0.0714
+Spirit Airlines,3,airline,0.0517
+Spirit Airlines,4,spirit airline,0.0438
+Spirit Airlines,5,bag,0.0395
+Spirit Airlines,6,hour,0.032
+Spirit Airlines,7,time,0.0293
+Spirit Airlines,8,never,0.0282
+Spirit Airlines,9,fly,0.0279
+Spirit Airlines,10,get,0.0274
+Spirit Airlines,11,pay,0.0266
+Spirit Airlines,12,customer,0.0266
+Spirit Airlines,13,fly spirit,0.025
+Spirit Airlines,14,charge,0.0247
+Spirit Airlines,15,delayed,0.0247
+United Airlines,1,united,0.1428
+United Airlines,2,flight,0.0651
+United Airlines,3,united airline,0.0505
+United Airlines,4,airline,0.0429
+United Airlines,5,hour,0.0335
+United Airlines,6,customer,0.0303
+United Airlines,7,time,0.0298
+United Airlines,8,seat,0.0291
+United Airlines,9,houston,0.0291
+United Airlines,10,plane,0.0291
+United Airlines,11,service,0.0283
+United Airlines,12,bag,0.0269
+United Airlines,13,fly united,0.0262
+United Airlines,14,fly,0.0253
+United Airlines,15,newark,0.0248
+Frontier Airlines,1,frontier,0.1279
+Frontier Airlines,2,flight,0.0674
+Frontier Airlines,3,airline,0.0474
+Frontier Airlines,4,bag,0.042
+Frontier Airlines,5,denver,0.0408
+Frontier Airlines,6,hour,0.0394
+Frontier Airlines,7,frontier airline,0.0358
+Frontier Airlines,8,get,0.0349
+Frontier Airlines,9,time,0.0302
+Frontier Airlines,10,pay,0.0285
+Frontier Airlines,11,fly,0.027
+Frontier Airlines,12,delayed,0.0263
+Frontier Airlines,13,never,0.026
+Frontier Airlines,14,customer,0.0258
+Frontier Airlines,15,gate,0.0253
+British Airways,1,ba,0.1246
+British Airways,2,british,0.0719
+British Airways,3,british airway,0.0698
+British Airways,4,airway,0.0565
+British Airways,5,seat,0.0529
+British Airways,6,london,0.0527
+British Airways,7,flight,0.0478
+British Airways,8,class,0.0406
+British Airways,9,heathrow,0.0394
+British Airways,10,service,0.0358
+British Airways,11,food,0.034
+British Airways,12,cabin,0.0333
+British Airways,13,business,0.033
+British Airways,14,crew,0.0295
+British Airways,15,business class,0.0292
+Delta Air Lines,1,delta,0.1574
+Delta Air Lines,2,flight,0.0736
+Delta Air Lines,3,hour,0.0387
+Delta Air Lines,4,atlanta,0.0331
+Delta Air Lines,5,time,0.0302
+Delta Air Lines,6,delayed,0.0266
+Delta Air Lines,7,seat,0.0265
+Delta Air Lines,8,bag,0.0264
+Delta Air Lines,9,fly delta,0.0256
+Delta Air Lines,10,get,0.0254
+Delta Air Lines,11,would,0.0248
+Delta Air Lines,12,line,0.0246
+Delta Air Lines,13,customer,0.0244
+Delta Air Lines,14,plane,0.0241
+Delta Air Lines,15,service,0.0239
+Allegiant Air,1,allegiant,0.1215
+Allegiant Air,2,flight,0.0664
+Allegiant Air,3,hour,0.0419
+Allegiant Air,4,airline,0.0414
+Allegiant Air,5,plane,0.039
+Allegiant Air,6,time,0.0356
+Allegiant Air,7,allegiant air,0.0356
+Allegiant Air,8,get,0.0334
+Allegiant Air,9,delayed,0.0313
+Allegiant Air,10,fly,0.0301
+Allegiant Air,11,fly allegiant,0.025
+Allegiant Air,12,customer,0.025
+Allegiant Air,13,would,0.024
+Allegiant Air,14,bag,0.0237
+Allegiant Air,15,airport,0.0237
+Turkish Airlines,1,turkish,0.1322
+Turkish Airlines,2,istanbul,0.1297
+Turkish Airlines,3,turkish airline,0.1153
+Turkish Airlines,4,airline,0.0592
+Turkish Airlines,5,flight,0.0554
+Turkish Airlines,6,via istanbul,0.0435
+Turkish Airlines,7,hour,0.0328
+Turkish Airlines,8,ticket,0.0315
+Turkish Airlines,9,service,0.0304
+Turkish Airlines,10,airport,0.0301
+Turkish Airlines,11,seat,0.0298
+Turkish Airlines,12,staff,0.0297
+Turkish Airlines,13,time,0.028
+Turkish Airlines,14,customer,0.0264
+Turkish Airlines,15,via,0.0243
+Etihad Airways,1,etihad,0.1425
+Etihad Airways,2,abu,0.1402
+Etihad Airways,3,dhabi,0.1379
+Etihad Airways,4,abu dhabi,0.1369
+Etihad Airways,5,flight,0.0583
+Etihad Airways,6,seat,0.0483
+Etihad Airways,7,via abu,0.0438
+Etihad Airways,8,etihad airway,0.0385
+Etihad Airways,9,food,0.0338
+Etihad Airways,10,class,0.0314
+Etihad Airways,11,service,0.0301
+Etihad Airways,12,airway,0.0291
+Etihad Airways,13,hour,0.0284
+Etihad Airways,14,business,0.0283
+Etihad Airways,15,business class,0.0271
+Air Canada,1,canada,0.1428
+Air Canada,2,air canada,0.1379
+Air Canada,3,air,0.0904
+Air Canada,4,flight,0.0676
+Air Canada,5,toronto,0.0543
+Air Canada,6,montreal,0.0348
+Air Canada,7,vancouver,0.0337
+Air Canada,8,hour,0.0332
+Air Canada,9,service,0.0325
+Air Canada,10,ac,0.0324
+Air Canada,11,time,0.0289
+Air Canada,12,customer,0.0261
+Air Canada,13,staff,0.026
+Air Canada,14,get,0.0235
+Air Canada,15,told,0.0228
