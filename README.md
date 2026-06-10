@@ -2,13 +2,13 @@
 網頁文字探勘
 請閱讀學姊這個資料夾的README.md，member A & member B & member C詳細的工作內容文件則是放置在文件說明這個資料夾中(兩個docx)。
 
-## 線上 Dashboard（直接點擊開啟）
+## 線上 Dashboard（可以直接點擊開啟，直接看到所有內容）
 
 > **[點此開啟 Dashboard](https://lin-jessic.github.io/Airline-Review-Text-Mining/%E5%AD%B8%E5%A7%8A/dashboard_2/index.html)**
 
 ---
 
-## Airline Reviews Text Mining Dashboard 操作說明
+## Airline Reviews Text Mining Dashboard 操作說明(以下的操作說明是給如果需要自己在本機端下載打開的話，若想要方便直接觀看網頁的話可以直接點擊上面網址開啟即可)
 
 本專題提供一個整合式互動 Dashboard，用來呈現 Airline Reviews Text Mining 的主要分析結果。
 最終結果的 Dashboard 放置於 `學姊/dashboard_2/` 資料夾中，為完整整合版介面，內容包含 Member B 的 TF / TF-IDF、VADER 情緒分析、LDA 主題模型與標籤驗證結果，也整合 Member C 新增的 BERTopic 主題分析、模型比較，以及跨時間與航空公司分析。
