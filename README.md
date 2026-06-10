@@ -1,6 +1,13 @@
 # Airline-Review-Text-Mining
 網頁文字探勘
 請閱讀學姊這個資料夾的README.md，member A & member B & member C詳細的工作內容文件則是放置在文件說明這個資料夾中(兩個docx)。
+
+## 線上 Dashboard（直接點擊開啟）
+
+> **[點此開啟 Dashboard](https://lin-jessic.github.io/Airline-Review-Text-Mining/%E5%AD%B8%E5%A7%8A/dashboard_2/index.html)**
+
+---
+
 ## Airline Reviews Text Mining Dashboard 操作說明
 
 本專題提供一個整合式互動 Dashboard，用來呈現 Airline Reviews Text Mining 的主要分析結果。
